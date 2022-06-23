@@ -99,14 +99,28 @@ button {
 /* NavBar */
 
 #navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     /* space-between: 왼쪽과 오른쪽은 딱 붙이고 나머지만 공간을줌 */
     background-color: var(--color-dark-purple);
     align-items: center;
-    color: var(--color-light-white);
+    color: transparent;
     padding: 16px;
+    z-index: 1;
+    transition: all var(--animation--time) ease-in-out;
 }
+
+#navbar.navbar--dark {
+    background-color: var(--color-purple);
+    /* background-color: transparent; */
+    padding: 8px;
+}
+
+/* #navbar.navbar--dark li{
+    color: var(--color-black);
+} */
 
 .navbar__toggle-btn {
     position: absolute;
@@ -127,6 +141,7 @@ button {
 }
 
 .navbar__menu__item {
+    color: var(--color-light-white);
     padding: 8px 12px;
     margin: 0 4px;
     cursor: pointer;
@@ -144,6 +159,7 @@ button {
 #home {
     background: url('imgs/bgimg.png') center/cover no-repeat;
     padding: 40px;
+    padding-top: 120px;
     text-align: center;
 }
 
@@ -337,6 +353,10 @@ button {
     justify-content: center;
     align-items: center;
     background-color: var(--color-light-white);
+}
+
+.project.invisible  {
+    display: none; 
 }
 
 .project__img {

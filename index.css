@@ -11,6 +11,8 @@
   --color-light-grey: #7c7979;
   --color-blue: #73aace;
   --color-dark-blue: #437299;
+  --color-baby-blue: #89CFF0;
+  --color-light-blue: #ADD8E6;
   --color-purple: #800080;
   --color-dark-purple: #4B0082;
   --color-yellow: #fff7d1;
@@ -106,6 +108,15 @@ button {
     padding: 16px;
 }
 
+.navbar__toggle-btn {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    font-size: 24px;
+    color: var(--color-white);
+    display: none;
+}
+
 .navbar__menu {
     display: flex;
 }
@@ -162,6 +173,10 @@ button {
 .section {
     padding: 50px;
     text-align: center;
+    margin: auto;
+}
+
+.section__option {
     max-width: 1200px;
     margin: auto;
 }
@@ -224,4 +239,201 @@ button {
 
 .license__name, .license__period {
     color: var(--color-light-grey);
+}
+
+#skills {
+    background-color: var(--color-light-blue);
+}
+
+.skillset {
+    display: flex;
+    background-color: var(--color-light-grey);
+    color: var(--color-light-white);
+    margin: 20px 0;
+}
+
+.skill {
+    margin-bottom: 32px;
+}
+
+.skillset__title {
+    color: var(--color-white);
+}
+
+.skillset__left {
+    flex-basis: 60%;
+    background-color: var(--color-dark-grey);
+    padding: 20px 40px;
+}
+
+.skill__bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-grey);
+}
+
+.skill__value {
+    /* width: 60%; */
+    height: 3px;
+    background-color: var(--color-orange);
+}
+
+.skill__discription {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skillset__right {
+    flex-basis: 40%;
+}
+
+.tools {
+    background-color: var(--color-grey);
+}
+
+.tools, .etc {
+    padding: 20px;
+}
+
+.work__categories {
+    margin: 40px;
+}
+
+.category__btn {
+    border: 1px solid var(--color-dark-grey);
+    border-radius: var(--size-border-radious);
+    font-size: var(--font-regular);
+    padding: 8px 48px;
+}
+
+.category__btn.active,
+.category__btn:hover {
+    background-color: var(--color-light-blue);
+    color: var(--color-white);
+}
+
+.category__count {
+    display: inline-block;
+    background-color: var(--color-orange);
+    border-radius: 50%;
+    color: var(--color-white);
+    line-height: 25px;
+    width: 25px;
+    height: 25px;
+}
+
+.work__projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    position: relative;
+    width: 280px;
+    height: 300px;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-light-white);
+}
+
+.project__img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.project__description {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%; 
+    transform: translateY(10px);
+    transition: all var(--animation--time) ease-in;
+    background-color: var(--color-black);
+}
+
+.project:hover .project__description {
+    opacity: 0.8;
+    transform: translateY(0);
+}
+
+.project__description h3 {
+    color: var(--color-white);
+}
+
+.project__description h3:after {
+    content: '';
+    display: block;
+    position: relative;
+    left: 50%;
+    margin-left: -12px;
+    margin-top: 8px;
+    width: 25px;
+    height: 2px;
+    background-color: var(--color-dark-white);
+}
+
+#contact {
+    background-color: var(--color-dark-grey);
+}
+
+.contact__title, .contact__email {
+    color: var(--color-white);
+}
+
+.contact__title {
+    margin: 32px 0;
+}
+
+.contact__links {
+    font-size: var(--font-large);
+    margin: 24px 0;
+    transition: all var(--animation--time) ease-in;
+}
+
+.contact__links i:hover {
+    transform: scale(1.1);
+    color: var(--color-yellow);
+}
+
+/* responsive Options */
+/* max: 768px */
+@media screen and (max-width: 768px){
+    .navbar__toggle-btn {
+        display: block;
+    }
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar__menu {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .about__majors {
+        margin-bottom: 38px;
+    }
+
+    .license__all {
+        flex-direction: column;
+    }
+
+    .skillset {
+        flex-direction: column;
+    }
+
+    .project {
+        flex-grow: 1;
+    }
 }

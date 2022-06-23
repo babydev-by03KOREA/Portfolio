@@ -31,16 +31,14 @@
     <!-- Home -->
     <section id="home">
         <img src="imgs/박형주.jpg" alt="박형주의 프로필 사진" class="home__avata">
-        <div class="home__code">
-            <span class="home__code__text">
-                <!-- <pre><code></code></pre> -->
-            </span>
-        </div>
-        <h2 id="home__discription">국가에서 인증한 JSP + OracleDB 활용능력인 과정평가형 정보처리산업기사 보유자입니다!</h2>
+        <h1 class="home__code">
+            안녕하세요!<br>풀스택을 꿈꾸는 개발자 박형주입니다!
+        </h1>
+        <h2 class="home__discription">국가에서 인증한 JSP + OracleDB 활용능력인 과정평가형 정보처리산업기사 보유자입니다!</h2>
         <button class="home__contact">Contact Me!</button>
     </section>
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section">
         <h1>About Me</h1>
         <p>
             광운전자공업고등학교 모바일소프트웨어과(현 광운인공지능고등학교 인공지능소프트웨어과)를 졸업하였습니다.
@@ -53,9 +51,9 @@
                 <div class="major__icon">
                     <i class="fa-brands fa-html5"></i>
                 </div>
-                <div class="major__title">
+                <h2 class="major__title">
                     Front-end
-                </div>
+                </h2>
                 <div class="major__description">
                     HTML, CSS, JavaScript,
                     <br/>Web APIs, BootStrap
@@ -65,9 +63,9 @@
                 <div class="major__icon">
                     <i class="fa-solid fa-mobile-button"></i>
                 </div>
-                <div class="major__title">
+                <h2 class="major__title">
                     Mobile
-                </div>
+                </h2>
                 <div class="major__description">
                     ios, Swift
                 </div>
@@ -76,27 +74,37 @@
                 <div class="major__icon">
                     <i class="fa-solid fa-server"></i>
                 </div>
-                <div class="major__title">
+                <h2 class="major__title">
                     Back-end
-                </div>
+                </h2>
                 <div class="major__description">
                     JSP, OracleCloud, OracleDB
                     <br/> Spring, Linux
                 </div>
             </div>
-            <div class="about__license">
-                <div class="license">
-                    <img src="/imgs/license/HRDK.png" alt="한국산업인력공단 로고" class="license__logo">
+        </div>
+    </section>
+    <!-- License -->
+    <section id="license" class="section">
+        <h1>취득 자격증</h1>
+        <div class="license__all">
+            <div class="license__option">
+                <img src="/imgs/license/HRDK.png" alt="한국산업인력공단 로고" class="license__logo">
+                <div class="license__info">
                     <p class="license__name">정보처리기능사</p>
                     <p class="license__period">2021-10</p>
                 </div>
-                <div class="license">
-                    <img src="/imgs/license/HRDK.png" alt="한국산업인력공단 로고" class="license__logo">
+            </div>
+            <div class="license__option">
+                <img src="/imgs/license/HRDK.png" alt="한국산업인력공단 로고" class="license__logo">
+                <div class="license__info">
                     <p class="license__name">과정평가형 정보처리산업기사</p>
                     <p class="license__period">2022-05</p>
                 </div>
-                <div class="license">
-                    <img src="/imgs/license/JLPT.png" alt="JLPT 로고" class="license__logo">
+            </div>
+            <div class="license__option">
+                <img src="/imgs/license/JLPT.png" alt="JLPT 로고" class="license__logo">
+                <div class="license__info">
                     <p class="license__name">JLPT N2</p>
                     <p class="license__period">2021-07</p>
                 </div>
@@ -104,7 +112,7 @@
         </div>
     </section>
     <!-- Skills  -->
-    <section id="skills">
+    <section id="skills" class="section">
         <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>
@@ -202,7 +210,7 @@
         </div>
     </section>
     <!-- Work -->
-    <section id="work">
+    <section id="work" class="section">
         <h1>My work</h1>
         <h3>Projects</h3>
         <h5>DB는 언제 어디서든 접속 가능하도록 JAVA 프로젝트에 OracleCloud를 사용했습니다.</h5>
@@ -278,7 +286,7 @@
         </div>
     </section>
     <!-- TestImonials -->
-    <section id="testimonials">
+    <section id="testimonials" class="section">
         <h1>TestImonials</h1>
         <h3>See what they say about me</h3>
         <div class="testimonials">
@@ -301,7 +309,7 @@
         </div>
     </section>
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section">
         <hi class="contact__title">Contact Me!</hi>
         <h2 class="contact__email">hyeongju1122@gmail.com</h2>
         <div class="contact__links">

@@ -5,6 +5,15 @@
 // https://developer.mozilla.org/ko/docs/Web/API/CSS_Object_Model/Determining_the_dimensions_of_elements
 // https://developer.mozilla.org/ko/docs/Web/API/Element/scrollIntoView
 
+// 반응형을 위한 JS Code
+
+const toogleBtn = document.querySelector(".navbar__toggle-btn");
+const menu = document.querySelector(".navbar__menu");
+
+toogleBtn.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});
+
 
 // navbar - scroll event handler
 const navbar = document.querySelector('#navbar');

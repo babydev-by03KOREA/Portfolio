@@ -426,9 +426,12 @@ button {
 /* responsive Options */
 /* max: 768px */
 @media screen and (max-width: 768px){
+    
     .navbar__toggle-btn {
         display: block;
+
     }
+
     #navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -439,6 +442,15 @@ button {
         text-align: center;
         width: 100%;
         display: none;
+    }
+
+    .navbar__menu.active {
+        display: flex;
+    }
+
+    .navbar__menu__item {
+        width: 100%;
+        text-align: center;
     }
 
     .about__majors {

@@ -426,7 +426,6 @@ button {
 /* responsive Options */
 /* max: 768px */
 @media screen and (max-width: 768px){
-    
     .navbar__toggle-btn {
         display: block;
 
@@ -454,7 +453,9 @@ button {
     }
 
     .about__majors {
-        margin-bottom: 38px;
+        /* margin: auto; */
+        /* margin-bottom: 38px; */
+        margin: 0;
     }
 
     .license__all {

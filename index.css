@@ -412,6 +412,11 @@ button {
     margin: 32px 0;
 }
 
+.contact__email {
+    font-size: var(--font-medium);
+    text-align: center;
+}
+
 .contact__links {
     font-size: var(--font-large);
     margin: 24px 0;
@@ -426,6 +431,11 @@ button {
 /* responsive Options */
 /* max: 768px */
 @media screen and (max-width: 768px){
+
+   #home {
+    padding-left: 20px;
+    padding-right: 20px;
+   }
 
     .navbar__toggle-btn {
         display: block;
@@ -476,4 +486,5 @@ button {
     .project {
         flex-grow: 1;
     }
+
 }

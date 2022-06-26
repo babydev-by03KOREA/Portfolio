@@ -28,6 +28,7 @@ document.addEventListener('scroll', () => {
 
 
 // 할당한 변수는 전부 dataset에 들어감.
+// navbar click scrollTo smooth
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
     const target = event.target;
@@ -40,6 +41,7 @@ navbarMenu.addEventListener('click', (event) => {
     const scrollTo = document.querySelector(link);
     scrollTo.scrollIntoView({behavior: 'smooth'});
 });
+
 
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;

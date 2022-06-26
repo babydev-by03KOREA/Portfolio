@@ -458,9 +458,11 @@ button {
     }
 
     .about__majors {
-        /* margin: auto; */
-        /* margin-bottom: 38px; */
-        margin: 0;
+        display: inline-block;
+    }
+
+    .major {
+        padding: 10px;
     }
 
     .license__all {
